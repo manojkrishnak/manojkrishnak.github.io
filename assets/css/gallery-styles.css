@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom styles */
+
+/* general styles */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.flex{
+    display: flex;
+}
+/* Aside - sidebar */
+
+.aside{
+    background-color: #ec523f;
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+}
+
+/* .gallery-logo-container{
+    margin-left: 20px;
+} */
+
+.gallery-logo-container img{
+    width: 50px;
+}
+
+.gallery-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-heading{
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.gallery-logo-container, .gallery-home{
+    text-decoration: none;
+}
+
+.gallery-home{
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.footer-text-bold{
+    font-size: 18px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.footer-text{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.sc-links{
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: #ec523f;
+}
+
+.social-media{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+ }
+ 
+ .social-media a{
+     text-decoration: none;
+     margin-right: 15px;
+ }
+
+
+ .gallery-images{
+    width: 80%;
+    padding: 20px;
+    margin-left: 20%;
+ }
+
+.gallery-page{
+    display: flex;
+}
+
+ .gallery-main-heading{
+     font-size: 30px;
+     font-weight: 700;
+     text-align: center;
+     padding: 15px;
+ }
+
+ /*  Images */
+
+ .rectangle{
+    width: 100%;
+    margin-bottom: 25px; 
+    border: 2px solid black;
+    border-radius: 4px;
+ }
+
+ .col-1, .col-2{
+    width: 48%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+ }
+
+ .col-2{
+     margin-left: 25px;
+ }
+

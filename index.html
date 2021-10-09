@@ -1,48 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <title>HOME --- Checkpoint - 1 | HTML & CSS</title>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <a href="index.html" class="active">home</a>
-                <a href="blog.html">blog</a>
-            </nav>
-        </header>
-        <main>
-            <h3 class="heading">The Box Model, Box Sizing and Box Shadow</h3>
-            <section>
-                <p class="sub-heading">Excercise One</p>
-                <div class="box"></div>
-                <div class="container">
-                    <span class="circle content"></span>
-                    <span>#99D8CA</span>
-                    <span class="circle outline"></span>
-                    <span>#0D1430</span>
-                    <span class="circle box-shadow"></span>
-                    <span>#90FFA9</span>
-                    <span class="circle border"></span>
-                    <span>#5873E2</span>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/65f4240069.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <title>Checkpoint - 2</title>
+  </head>
+  <body id="top">
+    <div class="social-media">
+        <div class="container">
+            <a href="#">
+                <i class="sc-links fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="sc-links fab fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="sc-links fab fa-linkedin-in"></i>
+            </a>
+            <a href="#">
+                <i class="sc-links fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+    <header class="header">
+        <div class="flex-center">
+            <a class="logo" href="#">
+                <img src="./assets/media/logo.png" alt="brand logo">
+            </a>
+            <div class="nav flex align-vertical">
+                <h1 class="logo-name">
+                    Flex
+                </h1>
+                <nav class="navbar">
+                    <a class="active" href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Team</a>
+                    <a href="/gallery.html">Gallery</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="hero">
+        <h2 class="hero-heading hr">Digital Marketing <hr></h2>
+        <!-- <hr> -->
+        <p class="hero-caption">More visitors to your website</p>
+        <a class="design-btn" href="#">Let us design!</a>
+    </div>
+    <div class="dummy-carousel">
+        <i class="fas fa-circle fa-xs"></i>
+        <i class="fas fa-circle fa-xs light"></i>
+        <i class="fas fa-circle fa-xs light"></i>
+    </div>
+    <main>
+        <section class="services">
+            <div class="container">
+                <div class="text-center">
+                    <h3 class="heading">Our Services</h3>
+                    <p class="caption">We design mobile first websites for you</p>
+                    <div class="all-boxes">
+                        <div class="rect bg-huegreen">
+                            <i class="services-box far fa-file-code"></i>
+                        </div>
+                        <div class="rect bg-orange">
+                            <i class="services-box far fa-paper-plane"></i>
+                        </div>
+                        <div class="rect bg-skyblue">
+                            <i class="services-box fas fa-landmark"></i>
+                        </div>
+                        <div class="rect bg-green">
+                            <i class="services-box fas fa-flask"></i>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <hr>
-            <section>
-                <p class="sub-heading">Excercise Two</p>
-                <div class="boxes">
-                    <div class="box-ex2"></div>
-                    <div class="box-ex2"></div>
-                    <div class="box-ex2"></div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h3 class="heading">Our Portfolio</h3>
+                    <p class="caption">Amazing work for our clients</p>
+                    <div class="all-images flex-wrap">
+                        <div class="col">
+                            <img class="portfolio-img" src="./assets/media/portfolio/p1.jpg" alt="pic 1">
+                        </div>
+                        <div class="col">
+                            <img class="portfolio-img" src="./assets/media/portfolio/p2.jpg" alt="pic 2">
+                        </div>
+                        <div class="col">
+                            <img class="portfolio-img" src="./assets/media/portfolio/p3.jpg" alt="pic 3">
+                        </div>
+                        <div class="col">
+                            <img class="portfolio-img" src="./assets/media/portfolio/p4.jpg" alt="pic 4">
+                        </div>
+                        <div class="col">
+                            <img class="portfolio-img" src="./assets/media/portfolio/p5.jpg" alt="pic 5">
+                        </div>
+                        <div class="col">
+                            <img class="portfolio-img" src="./assets/media/portfolio/p6.jpg" alt="pic 6">
+                        </div>
+                        <div class="col">
+                            <img class="portfolio-img" src="./assets/media/portfolio/p7.jpg" alt="pic 7">
+                        </div>
+                        <div class="col">
+                            <img class="portfolio-img" src="./assets/media/portfolio/p8.jpg" alt="pic 8">
+                        </div>
+                    </div>
                 </div>
-                <hr>
-                <div class="boxes">
-                    <div class="box-ex2 border"></div>
-                    <div class="box-ex2 border"></div>
-                    <div class="box-ex2 border"></div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <div class="text-center">
+                    <h3 class="heading">Our Portfolio</h3>
+                    <p class="caption">Amazing work for our clients</p>
+                    <div class="team-members">
+                        <div class="team-img-box">
+                            <img class="team-img" src="./assets/media/member1.jpg" alt="team img 1">
+                        </div>
+                        <div class="team-img-box">
+                            <img class="team-img" src="./assets/media/member2.jpg" alt="team img 2">
+                        </div>
+                        <div class="team-img-box">
+                            <img class="team-img" src="./assets/media/member3.jpg" alt="team img 3">
+                        </div>
+                        <div class="team-img-box">
+                            <img class="team-img" src="./assets/media/member4.jpg" alt="team img 4">
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
-    </body>
+                <div class="design-skills">
+                    <div class="text-center">
+                        <h5 class="heading-sm">Design skills</h5>
+                        <p class="caption-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="skills">
+                        <div class="description">
+                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex rem harum ullam iusto laboriosam hic voluptates voluptas magnam, enim repudiandae maxime nulla quisquam. Quaerat alias eius aliquid perferendis, quis debitis.
+                            Quisquam saepe voluptate reiciendis laboriosam veniam voluptates, inventore esse possimus perferendis obcaecati deserunt sint quibusdam iste aperiam magni est beatae non nisi voluptas corporis similique facilis aliquid! Incidunt, excepturi beatae!
+                            </p>
+                            <p>Porro similique <a class="hyperlink" href="#">laudantium</a>, eveniet adipisci nesciunt molestiae quos suscipit facilis alias? Aspernatur, dignissimos quaerat labore quam doloribus in culpa aliquid voluptatibus ratione ipsum exercitationem cupiditate illum dolores aliquam voluptas maxime.
+                                Dolore laboriosam quam voluptas expedita voluptatibus fugit eum cum error inventore vitae reiciendis at mollitia cupiditate magnam debitis maiores consequuntur, rerum quis sit temporibus reprehenderit officiis. Labore eligendi voluptatibus excepturi.</p>
+                        </div>
+                        <div class="skills-bar">
+                            <div class="skill-container">
+                                <div class="bar photoshop">Photoshop 90%</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="bar html">HTML CSS 80%</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="bar dev">Development 70%</div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="bar marketing">Marketing 80%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h3 class="heading">Contact</h3>
+                    <p class="caption">Send a Message to us</p>
+                    <iframe width="100%" height="240" style="margin-top: 20px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3376.068052471449!2d76.36881743995058!3d32.20239688275869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus!5e0!3m2!1sen!2sin!4v1531142400286" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+                <div class="contact-details">
+                    <div class="description contact-description">
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sapiente dolorem necessitatibus assumenda totam modi, animi veniam debitis, esse unde itaque <a class="hyperlink" href="#">commodi</a>, veritatis perferendis ad recusandae nostrum <strong>repellendus</strong> mollitia cumque.</p>
+                        <p class="para">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae modi beatae architecto porro dolorem voluptas soluta earum, sit molestiae voluptate, quidem sapiente! Odio sed in tenetur voluptatem deleniti quasi quaerat!
+                            Quibusdam, natus enim.
+                        </p>
+                        <p class="para"> quos eligendi iusto voluptatum natus distinctio animi amet deleniti, corrupti velit quasi quia? Assumenda quasi quisquam natus? Quae?Natus, quos minima. Consectetur, aliquid molestiae expedita praesentium magnam eligendi similique nam soluta cumque ratione hic alias voluptatum qui sit id quia dignissimos amet eos illum deleniti delectus quas et!
+                        </p>
+                        <address>
+                            Phone: 9080706050 <br>
+                            Email: <a class="hyperlink" href="mailto:abc@abc.com">abc@abc.com</a><br>
+                            Address: #1, Mumbai, MH
+                        </address>
+                    </div>
+                    <div class="contact-form">
+                        <div>
+                            <input type="text" name="name" id="name"  placeholder="Your Name">
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="Your Email">
+                        </div>
+                        <div>
+                            <input type="text" name="subject" id="subject" placeholder="Subject">
+                        </div>
+                        <div>
+                            <textarea name="message" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+                        </div>
+                        <button class="submit-btn">Send Message</button>
+                    </div>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container footer-container">
+                <div class="footer">
+                    <p>Copyright &copy; 2021 Company Name. Design: Template Mo</p>
+                </div>
+                <div class="top-container">
+                    <a class="top-btn" href="#top">Back to top</a>
+                </div>
+            </div>
+            
+        </footer>
+    </main>
+  </body>
 </html>
